@@ -1,0 +1,433 @@
+            @font-face {
+                font-family: "NanumSquare_acR";
+                src: url("../font/NanumSquare_acR.ttf");
+            }
+            @font-face {
+                font-family: "NanumSquare_acL";
+                src: url("../font/NanumSquare_acL.ttf");
+            }
+            @font-face {
+                font-family: "NanumSquare_acB";
+                src: url("../font/NanumSquare_acB.ttf");
+            }
+            body{
+                font-family: "NanumSquare_acR";
+                margin: 0;
+                min-width: 800px;
+                text-align: center;
+                -ms-overflow-style:none; 
+                overflow-x: hidden;
+                background-color: #fff;
+            }
+            body::-webkit-scrollbar { display:none; }
+            a, a:link, a:visited, a:hover, a:active {
+                text-decoration: none;
+                color : #444;
+            }
+            /* 첫번째 페이지 */
+            #views{
+                display: grid;
+                grid-template-rows: repeat(5, 100vh);
+            }
+            #page_1{
+                height: 100vh;
+                background-color: #222222;
+                color: white;
+                z-index: 2;
+            }
+            .fir_title{
+                display: none;
+                width: 850px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform:translate(-50%, -50%);
+                font-size: 54px;
+                text-align: left;
+            }
+            .fir_title> p{
+                margin: 20px;
+            }
+            .scrollDown_icon {
+                display: none;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform:translateX(-50%);
+            }
+            .scrollDown_icon p {
+                margin: 0px;
+                font-size: 24px;
+            }
+            .arr span {
+                position: relative;
+            }
+
+            .arr span::after {
+                content: '';
+                width: 20px; /* 사이즈 */
+                height: 20px; /* 사이즈 */
+                border-top: 1.5px solid #fff; /* 선 두께 */
+                border-right: 1.5px solid #fff; /* 선 두께 */
+                display: inline-block;
+                transform: rotate(135deg); /* 각도 */
+                margin-bottom: 10px;
+            }
+
+            /* 첫번째 페이지 */
+            /* 첫페이지 제외 공통 */
+            .hamburger{
+                display: none;
+            }
+            .float_bar{
+                position: fixed;
+                float: left;
+                z-index: 1;
+                width: 300px;
+                height: 100%;
+                padding-top: 100px;
+                padding-left: 100px;
+                list-style: none;
+                background-color: #e2e2e2;
+                color : #444;
+                font-size: 30px;
+                text-align: left;
+                font-family: "NanumSquare_acL";
+            }
+            ul,li{
+                padding-left: 0;
+                list-style: none;
+            }
+            .float_bar li{
+                margin-bottom: 40px;
+            }
+            .nav_skills{
+                margin-top: 20px;
+                margin-left: 20px;
+                display: none;
+                text-align: left;
+            }
+            .nav_skills li{
+                margin-bottom: 20px;
+            }
+            .ininteraction_button{
+                margin-top: 100px;
+                font-size: 20px;
+            }
+            .ininteraction_button > span{
+                font-size: 13px;
+                color : rgb(148, 148, 148);
+            }
+            
+            .page_not_1{
+                /* display: none;
+                text-align: center;
+                width: 1920px;
+                max-width: 100%;
+                max-height: 100%;  */
+            }
+            .content{
+                width: 50%;
+                min-width: 750px;
+                text-align: left;
+                margin-top: 48px;
+                margin-left: 60%;
+                transform:translateX(-50%);
+            }
+            /* 첫페이지 제외 공통 */
+
+            /* 두번째 페이지 */
+            #page_2 > .content{
+                height: 100%;
+            }
+            #identification_photo{
+                margin-top: 3%;
+                margin-right: 20%;
+                width: 800px;
+            }
+            #Personal_information{
+                position: absolute;
+                top: 48px;
+                left: 300px;
+                width: 800px;
+            }
+            .PI_content> a,.PI_content> a:link,.PI_content> a:visited,.PI_content> a:hover,.PI_content> a:active {
+                text-decoration: none;
+                color : #444
+            }
+            #Personal_information th, td{
+                padding-top: 10px;
+            }
+            .PI_content{
+                vertical-align: bottom;
+                padding-bottom: 5px;
+                font-size: 25px;
+            }
+            .PI_content > a >  img{
+                width: 25px;
+                vertical-align: middle;
+            }
+            #introduction{
+                clear: both;
+                margin-top: 88px;
+            }
+            .introduction_title{
+                width: 180px;
+                font-size: 30px;
+                font-family: "NanumSquare_acB";
+                border-bottom: 2px solid #000;
+            }
+            .introduction_content > p{
+                margin: 0;
+                font-size: 24px;
+                color: #444;
+            }
+            #chameleon{
+                width: 50px;
+                float: left;
+                margin-left: -60px;
+                display: none;
+            }
+            .go_skills{
+                position: absolute;
+                bottom: 50px;
+                left: 50%;
+                transform:translateX(-50%);
+                text-align: center;
+            }
+            .go_skills p{
+                margin: 0px;
+                font-size: 20px;
+            }
+            .go_skills_arr span {
+                position: relative;
+            }
+            .go_skills_arr span::after {
+                content: '';
+                width: 20px; /* 사이즈 */
+                height: 20px; /* 사이즈 */
+                border-top: 1.5px solid #000; /* 선 두께 */
+                border-right: 1.5px solid #000; /* 선 두께 */
+                display: inline-block;
+                transform: rotate(135deg); /* 각도 */
+                margin-bottom: 10px;
+            }
+            /* 두번째 페이지 */
+
+            /* 세번째 페이지 */
+            #page_3 > .content{
+                height: 100%;
+            }
+            #page3_title{
+                float: left;
+                font-family: "NanumSquare_acB";
+                font-size: 30px;
+                border-bottom: 3px solid #000;
+            }
+            .skills{
+                clear: both;
+                margin-left: 100px;
+                height: 670px;
+                width: 700px;
+                overflow: hidden;
+                /* overflow: auto; */
+            }
+            .skills::-webkit-scrollbar { display:none; }
+            .skill_group{
+                height: 670px;
+            }
+            .invisible{
+                display: none;
+            }
+            .skill_name{
+                font-size: 30px;
+            }
+            .Prog{
+                border-radius: 5px;
+                width: 500px;
+                height: 40px;
+                background-color: grey;
+                position: relative;
+                box-shadow: 0.8px 0.8px rgba(0,0,0,0.7);
+
+            }
+            .inGauge{
+                position: absolute;
+                top: 0;
+                border-radius: 5px 0 0 5px;
+                width: 10px;
+                height: 40px;
+            }
+            .skill_info{
+                margin-top: 20px;
+                font-size: 20px;
+            }
+            #java_Gauge{background-color: #FF8C8C;}
+            #js_Gauge{background-color: #FFF08C;}
+            #flutter_Gauge{background-color: #5dbae6;}
+            #spring_Gauge{background-color: #ABE692;}
+            #jquery_Gauge{background-color: #0865A6;}
+            #oracle_Gauge{background-color: #F25D75;}
+            #git_Gauge{background-color: rgb(18, 18, 24);}
+            #html_Gauge{background-color: #FFBE8C;}
+            #css_Gauge{background-color: #8CBDFF;}
+            #for-scroll-top{margin-top: 40px;}
+            #for-scroll-bottom{margin-bottom: 150px;}
+
+            .button_skills_next,.button_skills_prev{
+              display: none;
+            }
+
+            .go_skills_more{
+                position: absolute;
+                bottom: 50px;
+                left: 50%;
+                transform:translateX(-50%);
+                text-align: center;
+            }
+            .go_skills_more p{
+                margin: 0px;
+                font-size: 20px;
+            }
+            .go_skills_more_arr span {
+                position: relative;
+            }
+            .go_skills_more_arr span::after {
+                content: '';
+                width: 20px; /* 사이즈 */
+                height: 20px; /* 사이즈 */
+                border-top: 1.5px solid #000; /* 선 두께 */
+                border-right: 1.5px solid #000; /* 선 두께 */
+                display: inline-block;
+                transform: rotate(135deg); /* 각도 */
+                margin-bottom: 10px;
+            }
+            /* 세번째 페이지 */
+            
+            /* 네번째 페이지 */
+            #page4_title{
+                float: left;
+                width: 170px;
+                font-family: "NanumSquare_acB";
+                font-size: 30px;
+                border-bottom: 3px solid #000;
+            }
+            .projects{
+                clear: both;
+                color: #444;
+                margin-left: 50%;
+                height: 640px;
+                width: 600px;
+                transform: translateX(-50%);
+            }
+            #GW{
+                height: 640px;
+                width: 600px;
+                background-image: url(../img/GW_main.PNG);
+                background-size: 600px;
+            }
+            #DTM{
+                height: 640px;
+                width: 600px;
+                background-color: #e2e2e2;
+                background-image: url(../img/soften_main.PNG);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 600px;
+            }
+            #findMyStar{
+                height: 640px;
+                width: 600px;
+                background-color: #e2e2e2;
+                background-image: url(../img/findMyStar.PNG);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            .project_info{
+                position: absolute;
+                top: 150px;
+                display: none;
+                height: 640px;
+                width: 600px;
+                transform: translateY(-30%);
+                background-color: #f7f7f9;
+                padding-top: 60px;
+            }
+            .project_info p{
+                position: absolute;
+                bottom: 50px;
+                left: 50px;
+            }.project_info a{
+                margin: 10px;
+            }
+            .project_info :first-child{
+                margin-top: 130px;
+            }
+            .project_explanation{
+                padding: 0 10% 0;
+                font-size: 18px;
+            }
+            .project_title{
+                font-size: 30px;
+            }
+            .project_link{
+                font-size: 20px;
+                vertical-align: middle;
+            }
+            .project_link > a > img{
+                width: 20px;
+            }
+            /* 네번째 페이지 */
+            .modal{ 
+                position:fixed;
+                z-index: 1; 
+                width:100%;
+                height:100%; 
+                background: rgba(0,0,0,0.8); 
+                top:0; 
+                bottom: 0;
+                display: none;
+            }
+            /* 다섯번째 페이지 */
+            #page5_title{
+                float: left;
+                width: 170px;
+                font-family: "NanumSquare_acB";
+                font-size: 30px;
+                border-bottom: 3px solid #000;
+            }
+            .emailForm{
+                margin-left: 15%;
+                padding-top: 10%;
+            }
+            .emailForm div{
+                margin: 20px;
+            }
+            .emailForm input{
+                background-color: #fff;
+                padding-left: 15px;
+                width: 500px;
+                height: 50px;
+                font-family: "NanumSquare_acR";
+                font-size: 20px;
+                border-radius: 8px;
+                border: 2px solid  #000;
+            }
+            #emailForm_content{
+                background-color: #fff;
+                padding-top: 15px;
+                padding-left: 15px;
+                font-family: "NanumSquare_acR";
+                font-size: 20px;
+                resize: none;
+                border-radius: 8px;
+                border: 2px solid  #000;
+                width: 500px;
+                height: 300px;
+            }
+            #send_button{
+                padding: 0;
+                border: 2px solid  #000;
+                width: 140px;
+            }

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+        <link rel="stylesheet" href="css/index.css">
+        <style type="text/css" media="screen and (max-height: 850px)">
+        #views{grid-template-rows: repeat(5, 850px);}
+        </style>        
+        <link rel="stylesheet" href="css/swiper-bundle.css">
+        <link rel="stylesheet" href="css/hamburger.css">
+        <link rel="stylesheet" href="css/toggle.css">
+    </head>
+    <body>
+        <div class="modal"></div>
+        <div id="views">
+            <div id="page_1">
+                <div class="fir_title">
+                    <p>안녕하세요. </p>
+                    <p>노력하는 개발자 <span>윤태성</span>입니다.</p>
+                </div>
+                <div class="scrollDown_icon">
+                    <p>2021 PORTFOLIO</p>
+                    <div class="arr">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <nav class="hamburger">
+                <a class="menu-trigger" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </nav>
+            <nav class="float_bar">
+                <ul>
+                    <li class="menu top_" onclick="navBar(0)">TOP_</li>
+                    <li class="menu introduction_" onclick="navBar(1)">INTRODUCTION_</li>
+                    <li class="menu skill_"onclick="navBar(2)">SKILL_
+                        <ul class="nav_skills">
+                            <li class="menu lan_" onclick="navBar(2.1)">LANGUAGE</li>
+                            <li class="menu frame_" onclick="navBar(2.2)">FRAMEWORK</li>
+                            <li class="menu db_" onclick="navBar(2.3)">DATABASE</li>
+                            <li class="menu etc_" onclick="navBar(2.4)">ETC</li>
+                        </ul>
+                    </li>
+                    <li class="menu projects_" onclick="navBar(3)">PROJECTS_</li>
+                    <li class="menu contact_" onclick="navBar(4)">CONTACT_</li>
+                    <li class="ininteraction_button">
+                        화면이 불편하시다면<br>
+                        인터랙션을 해제해보세요 :)<br>
+                        <span>스크롤이 끊긴다면 마우스 휠을<br> 위쪽으로 크게 한번 드래그해보세요</span>
+                        <br>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <p class="toggle_p">ON</p><p class="toggle_p" style="display:none;">OFF</p>
+                    </li>
+                </ul>
+            </nav>
+            <div id="page_2" class="page_not_1">
+                <div class="content">
+                    <img id="identification_photo" src="img/introduce_img@3x.png" alt="증명사진">
+                    <table id="Personal_information">
+                        <tr>
+                            <td class="PI_content">윤태성/98.08.17</td>
+                        </tr>
+                        <tr>
+                            <td class="PI_content">+82-10-2697-6537</td>
+                        </tr>
+                        <tr>
+                            <td class="PI_content"><a href="mailto:terry98yun@gmail.com" target="_blank">terry98yun@gmail.com <img src="img/shortcut_icon@3x.png" alt="gmail주소"></a></td>
+                        </tr>
+                        <tr>
+                            <td class="PI_content"><a href="https://github.com/terius-yun" target="_blank">https://github.com/terius-yun <img src="img/shortcut_icon@3x.png" alt="깃허브주소"></a></td>
+                        </tr>
+                    </table>
+                    <div id="introduction">
+                        <p class="introduction_title">ABOUT ME</p>
+                        <div class="introduction_content">
+                            <p>언제나 배우려는 노력하는 개발자.</p>
+                            <p>저는 배우는 것 자체에 즐거움을 느껴, 무엇이든 빠르게 습득하는 편입니다.</p>
+                            <br>
+                            <img class="icon" id="chameleon" src="img/chameleon.png" alt="카멜레온">
+                            <p><span class="egg">카멜레온</span> 같은 사람.</p>
+                            <p>어느 환경에서든 빠르게 적응하여 잘 녹아들 수 있습니다.</p>
+                            <br>
+                            <p>핵심을 짚어 빠르고, 정확하게 구현하는 것을 목표로 합니다.</p>
+                            <p>의도한 기능을 구현해 내는 것에 재능이 있습니다.</p>
+                            <br>
+                            <p>"배움에는 한계가 없다."라는 좌우명으로 항상 부족한 것을 배워 능력의 한계를 계속해서 넘어서는 사람이 되겠습니다.</p>
+                            <br>
+                            <p>매일 한 걸음씩 발전해 가는 저에게 기회를 주십시오.</p>
+                        </div>
+                    </div>
+                    <div class="go_skills">
+                        <p>GO Skills</p>
+                        <div class="go_skills_arr">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page_3" class="page_not_1">
+                <div class="content">
+                    <p id="page3_title">SKILL_
+                        <span class="invisible skill_title_1">LANGUAGE</span>
+                        <span class="invisible skill_title_2">FRAMEWORK</span>
+                        <span class="invisible skill_title_3">DATABASE</span>
+                        <span class="invisible skill_title_4">ETC</span>
+                    </p>
+                    <div class="skills">
+                        <!--LANGUAGE-->
+                        <div class="container-skills"><!--swiper-container--> 
+                          <div class="wrapper-skills"><!--swiper-wrapper-->                     
+                              <div class="slide-skills">
+                                <div class="skill_group g1 invisible">
+                                    <div id="java">
+                                        <p class="skill_name">Java</p>
+                                        <div class="Prog">
+                                            <span class="inGauge" id="java_Gauge"></span>
+                                        </div>
+                                        <div class="skill_info">
+                                            <p>독학을 통해 개발 공부를 진행했고, 체계적인 개발지식과 전산학에 대한 이해의 필요성을 느껴 국비지원 교육을 참여/이수했습니다.</p>
+                                            <p>자바의 기초에 지식을 학습하고, 컴퓨터 사이언스와 OOP에 대해 공부하였습니다.</p>
+                                            <p>자바의 기본적인 문법에 대해 알고 있으며, 문제에 부딪힌다면 해결할 방법을 찾을 수 있습니다.</p>
+                                        </div>
+                                    </div>
+                                    <div id="js">
+                                        <p class="skill_name">Javascript</p>
+                                        <div class="Prog">
+                                            <span class="inGauge" id="js_Gauge"></span>
+                                        </div>
+                                        <div class="skill_info">
+                                            <p>관련 서적과 구글링을 통한 학습으로 Javascript의 기본 문법을 익혔으며 jquery를 활용한 인터랙션을 만들 수 있습니다.</p>
+                                            <p>jsp와 같은 구조에서 java와 함께 응용하여 원하는 정보를 서버로 전달하고 받는 등의 작업을 구현한 바 있습니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="slide-skills">
+                                <!--LANGUAGE-->
+                                <!--FRAMEWORK-->
+                                <div class="skill_group g2 invisible">
+                                    <div id="spring">
+                                        <p class="skill_name">Spring</p>
+                                        <div class="Prog">
+                                            <span class="inGauge" id="spring_Gauge"></span>
+                                        </div>
+                                        <div class="skill_info">
+                                            <p>국비지원 교육과정 중 자바로 웹 개발을 진행하며, MVC 모델에 대해 알게 된 후 Spring의 필요성을 학습을 진행하고 있습니다.</p>
+                                            <p>기본적인 단계의 게시판을 구현할 수 있습니다.</p>
+                                        </div>
+                                    </div>
+                                    <div id="flutter">
+                                        <p class="skill_name">Flutter</p>
+                                        <div class="Prog">
+                                            <span class="inGauge" id="flutter_Gauge"></span>
+                                        </div>
+                                        <div class="skill_info">
+                                            <p>평소 앱 개발에도 관심이 있고, 크로스 플랫폼 앱 개발 프레임워크라는 점에 끌려 관심을 가지고 
+                                            온라인 강의 사이트와 구글링을 통해 학습 중에 있습니다.</p>
+                                            <p>flutter의 base 언어인 dart를 공부하던 중 OOP라는 개념에 대해 접하게 되었으며, 국비지원 교육을 참여하는 계기가 되었습니다.</p>
+                                        </div>
+                                    </div>
+                                    <!--FRAMEWORK-->
+                                </div>
+                            </div>
+                            <div class="slide-skills">
+                                <div class="skill_group g3 invisible">
+                                    <!--DATABASE-->
+                                    <div id="oracle">
+                                        <p class="skill_name">Oracle</p>
+                                        <div class="Prog">
+                                            <span class="inGauge" id="oracle_Gauge"></span>
+                                        </div>
+                                        <div class="skill_info">
+                                            요구에 맞추어 스키마 및 DB구조를 만들 수 있으며,<br>
+                                            데이터를 생성, 변경, 삭제하고 원하는 값을 추출 할 수 있습니다.
+                                        </div>
+                                    </div>
+                                    <!--DATABASE-->
+                                </div>
+                              </div>
+                              <div class="slide-skills">
+                                <div class="skill_group g4 invisible">
+                                <!--ETC-->
+                                    <div id="git">
+                                        <p class="skill_name">Git</p>
+                                        <div class="Prog">
+                                            <span class="inGauge" id="git_Gauge"></span>
+                                        </div>
+                                        <div class="skill_info">
+                                            진행하는 대부분의 프로젝트를 git, github를 통해 관리하고 있으며, 다른 개발인력과의 협업을 진행하기 위한 과정을 이해하고 있습니다.<br>
+                                        </div>
+                                    </div>
+                                    <div id="html">
+                                        <p class="skill_name">HTML5</p>
+                                        <div class="Prog">
+                                            <span class="inGauge" id="html_Gauge"></span>
+                                        </div>
+                                        <div class="skill_info">
+                                            적절한 태그를 통해 원하는 정보를 원하는 곳에 배치할 수 있으며, 자주 사용되는 태그의 특성을 이해하고 있습니다.
+                                        </div>
+                                    </div>
+                                    <div id="css">
+                                        <p class="skill_name">CSS3</p>
+                                        <div class="Prog">
+                                            <span class="inGauge" id="css_Gauge"></span>
+                                        </div>
+                                        <div class="skill_info">
+                                            웹 프론트의 구조에 대해 이해하고있으며, 자주 사용되는 요소들의 특성과 사용방법에 대해 이해하고 사용할 수 있습니다.<br>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div><!--swiper-wrapper-->
+                          </div><!--swiper-container--> 
+                          <div class="button_skills_next"></div>
+                          <div class="button_skills_prev"></div>
+                                <!--ETC-->
+                    </div><!--skills-->
+                    <div class="go_skills_more">
+                        <p>GO Skills more</p>
+                        <div class="go_skills_more_arr">
+                            <span></span>
+                        </div>
+                    </div>
+                </div><!--content-->
+            </div>
+            <div id="page_4" class="page_not_1">
+                <div class="content">
+                    <p id="page4_title">PROJECTS</p>
+                    <div class="projects swiper-container"><!--swiper-container--> 
+                        <div class="swiper-wrapper"><!--swiper-wrapper-->                     
+                            <div id="GW" class="swiper-slide">
+                                <div class="project_info">
+                                    <div class="project_explanation">
+                                        <div class="project_title">GroupWare_Project</div><br>
+                                        <br>
+                                        국비지원 수업과정에서 Java, jsp를 이용해 웹으로 구현한 팀프로젝트 입니다.<br><br>
+                                        국비지원 과정에서의 팀 프로젝트의 대부분은 재고관리 프로그램 혹은 쇼핑몰과 같은 주제를 선택하나
+                                        평소 시간관리나 업무효율과 같은것에 관심이 많던 저는 팀원들과의 소통을 통해 그룹웨어를 주제로 선정하게되었습니다.<br>
+                                        <br>
+                                        프로젝트에서 팀 리더로서 일정관리나 팀원들과 소통하는 경험은 소중하고 많은것을 배울 수 있는 경험이었으며,
+                                        개발이 진행되며 사전에 준비된 기획이나 설계가 가지는 중요성에 대해서도 느낄 수 있었으며, 
+                                        예기치 못한 상황에서의 문제 해결 방법에 대해서도 생각하게 되는 계기가 되었습니다.
+                                    </div>
+                                    <p class="project_link">
+                                        <a href="https://github.com/terius-yun/GroupWare_Project" target="_blank">프로젝트 코드보기 (github)<img src="img/shortcut_icon@project.png" alt="github주소"></a>
+                                        <a href="https://terius-yun.github.io/portfolio/pdf/GroupWare_Project.pdf" target="_blank">프로젝트 상세사항(pdf)<img src="img/shortcut_icon@project.png" alt="pdf파일주소"></a>
+                                    </p>
+                                </div>
+                            </div> 
+                            <div id="DTM" class="swiper-slide">
+                                <div class="project_info">
+                                    <div class="project_explanation">
+                                        <div class="project_title">Dummy Text Maker(DTM)</div><br>
+                                        <br>
+                                        현재 PM(Product Manager)으로 재직중인 저의 친형과 진행했던 프로젝트입니다.<br><br>
+                                        Java, jsp를 이용해 웹으로 구현하였습니다.<br><br>
+                                        디자인이나 타이포그래피, 개발과 같은 곳에서 데모 단계에 콘텐츠나 텍스트가 보이는 부분의 폰트나
+                                        전체적인 레이아웃을 맞춰보기 위해 사용되는 더미 텍스트나 로렘 입숨(lorem ipsum)의 경우
+                                        말이 되지 않는 문장이나, 전혀 상관없는 텍스트를 제공하는데
+                                        작업물과 연관된 더미 텍스트에 대한 니즈가 존재하지만 시간을 들여 작업물과 연관된 더미 텍스트를 찾는것이 현실적으로 어렵습니다.<br><br>
+                                        DTM을 사용하면 쉽고 간편하게 원하는 테마의 더미 텍스트를 얻을 수 있도록 구현하였고,
+                                        기획된 사항에 대해 프로그래밍을 진행하며 다른 직무와의 협업에 대한 경험을 느낄 수 있었습니다.                                        
+                                    </div>
+                                    <p class="project_link">
+                                        <a href="https://github.com/terius-yun/Soften_Project" target="_blank">프로젝트 코드보기 (github)</a>
+                                        <a href="https://terius-yun.github.io/Soften_Project/pdf/soften_DTM.pdf" target="_blank">프로젝트 상세사항(pdf)</a>
+                                    </p>
+                                </div>
+                            </div> 
+                            <div id="findMyStar" class="swiper-slide">
+                                <div class="project_info">
+                                    <div class="project_explanation">
+                                        <div class="project_title">Find My Star</div><br>
+                                        <br>
+                                        html,js,jquery를 이용하여 만들어졌으며, 개발에 입문하여 처음으로 진행했던 미니 프로젝트입니다.<br><br>
+                                        간단히 본인의 이름을 입력 후 별 찾기 버튼을 통해 아기자기한 별들이 랜덤으로 나타나는 웹.<br><br>
+                                        짧은 시간에 사용자에게 재미있는 요소를 제공하는 특성상 UI를 모바일 환경에 맞춰 픽스하였습니다.<br>
+                                        <br>
+                                        UI,UX에 대한 감각과 js,jquery를 익힐 수 있는 좋은 경험이었다고 생각합니다.
+                                    </div>
+                                    <p class="project_link">
+                                        <a href="https://github.com/terius-yun/findMyStar" target="_blank">프로젝트 코드보기(github)</a>
+                                        <a href="https://terius-yun.github.io/findMyStar/" onClick="window.open(this.href, '', 'width=400, height=800');return false;" target="_blank">결과물보기(github page)</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!--swiper-wrapper-->   
+                        
+                        <div class="swiper-pagination"> </div>
+                    </div><!--swiper-container--> 
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div id="page_5" class="page_not_1">
+                <div class="content">
+                    <h3 id="page5_title">CONTACT</h3>
+                    <div class="emailForm">
+                        <form id="contact-form"> 
+                            <input type="hidden" name="contact_number">
+                            <div>
+                                <input id="emailForm_name" type="text" name="from_name" placeholder="이름">
+                            </div>
+                            <div >
+                                <input id="emailForm_email" type="email" name="from_email" placeholder="회신 받을 이메일">
+                            </div>
+                            <div >
+                                <input id="emailForm_title" type="text" name="email_title" placeholder="제목">
+                            </div>
+                            <div>
+                                <textarea id="emailForm_content" name="contact" placeholder="내용"></textarea>
+                            </div>
+                            <div>
+                                <input id="send_button" type="submit" value="CONTACT">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script> 
+    <script type="text/javascript" src="js/contact.js"></script>
+    <script type="text/javascript" src="js/index_compress.js"></script>
+</html>
