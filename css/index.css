@@ -349,14 +349,14 @@
                 position: absolute;
                 top: 15vh;
                 display: none;
-                height: 640px;
+                height: 65vh;
                 width: 60vh;
                 transform: translateY(-30%);
                 background-color: #f7f7f9;
                 padding-top: 6vh;
             }
             .project_info :first-child{
-                margin-top: 13vh;
+                margin-top: 3vh;
             }
             .project_explanation{
                 padding: 0 10% 0;
@@ -366,12 +366,18 @@
                 font-size: 2.5vh;
             }
             .project_link{
-                margin-top: 10vh;
+                margin-top: 5vh;
                 font-size: 2vh;
                 vertical-align: middle;
             }
             .project_link > a{
                 margin-right: 1vh;
+            }
+            #GW .project_link{
+                margin-top: 15vh;
+            }
+            #findMyStar .project_link{
+                margin-top: 20vh;
             }
             .project_link > a > img{
                 margin-top: 0 !important;
