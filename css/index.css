@@ -373,6 +373,9 @@
             .project_link > a{
                 margin-right: 1vh;
             }
+            .FMS > a{
+                margin-right: 0.5vh;
+            }
             #GW .project_link{
                 margin-top: 15vh;
             }
