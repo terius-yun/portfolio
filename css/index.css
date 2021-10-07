@@ -24,68 +24,6 @@
                 text-decoration: none;
                 color : #444;
             }
-
-            /* 첫페이지 제외 공통 */
-            .hamburger{
-                display: none;
-            }
-            .modal{ 
-                position:fixed;
-                z-index: 1; 
-                width:100%;
-                height:100%; 
-                background: rgba(0,0,0,0.8); 
-                top:0; 
-                bottom: 0;
-                display: none;
-            }
-            .float_bar{
-                position: fixed;
-                float: left;
-                z-index: 1;
-                width: 300px;
-                height: 100%;
-                padding-top: 10vh;
-                padding-left: 10vh;
-                list-style: none;
-                background-color: #e2e2e2;
-                color : #444;
-                font-size: 3vh;
-                text-align: left;
-                font-family: "NanumSquare_acL";
-            }
-            ul,li{
-                padding-left: 0;
-                list-style: none;
-            }
-            .float_bar li{
-                margin-bottom: 4vh;
-            }
-            .nav_skills{
-                margin-top: 2vh;
-                margin-left: 2vh;
-                display: none;
-                text-align: left;
-            }
-            .nav_skills li{
-                margin-bottom: 2vh;            }
-            .ininteraction_button{
-                margin-top: 10vh;
-                font-family: "NanumSquare_acR";
-                font-size: 2vh;
-            }
-            .ininteraction_button > span{
-                font-size: 1.3vh;
-            }
-            .content{
-                width: 50%;
-                min-width: 750px;
-                text-align: left;
-                margin-top: 5vh;
-                margin-left: 60%;
-                transform:translateX(-50%);
-            }
-            /* 첫페이지 제외 공통 */
             /* 첫번째 페이지 */
             #views{
                 display: grid;
@@ -137,50 +75,111 @@
             }
 
             /* 첫번째 페이지 */
+            /* 첫페이지 제외 공통 */
+            .hamburger{
+                display: none;
+            }
+            .float_bar{
+                position: fixed;
+                float: left;
+                z-index: 1;
+                width: 300px;
+                height: 100%;
+                padding-top: 100px;
+                padding-left: 100px;
+                list-style: none;
+                background-color: #e2e2e2;
+                color : #444;
+                font-size: 30px;
+                text-align: left;
+                font-family: "NanumSquare_acL";
+            }
+            ul,li{
+                padding-left: 0;
+                list-style: none;
+            }
+            .float_bar li{
+                margin-bottom: 40px;
+            }
+            .nav_skills{
+                margin-top: 20px;
+                margin-left: 20px;
+                display: none;
+                text-align: left;
+            }
+            .nav_skills li{
+                margin-bottom: 20px;
+            }
+            .ininteraction_button{
+                margin-top: 100px;
+                font-size: 20px;
+            }
+            .ininteraction_button > span{
+                font-size: 13px;
+                color : rgb(148, 148, 148);
+            }
+            
+            .page_not_1{
+                /* display: none;
+                text-align: center;
+                width: 1920px;
+                max-width: 100%;
+                max-height: 100%;  */
+            }
+            .content{
+                width: 50%;
+                min-width: 750px;
+                text-align: left;
+                margin-top: 48px;
+                margin-left: 60%;
+                transform:translateX(-50%);
+            }
+            /* 첫페이지 제외 공통 */
+
             /* 두번째 페이지 */
             #page_2 > .content{
-                height: 100vh;
+                height: 100%;
             }
             #identification_photo{
                 margin-top: 3%;
                 margin-right: 20%;
-                width: 90vh;
+                width: 800px;
             }
             #Personal_information{
                 position: absolute;
-                top: 8vh;
-                left: 35vh;
-                width: 100vh;
+                top: 48px;
+                left: 300px;
+                width: 800px;
             }
             .PI_content> a,.PI_content> a:link,.PI_content> a:visited,.PI_content> a:hover,.PI_content> a:active {
                 text-decoration: none;
                 color : #444
             }
             #Personal_information th, td{
-                padding-top: 1vh;
+                padding-top: 10px;
             }
             .PI_content{
                 vertical-align: bottom;
-                padding-bottom: 0.3vh;
-                font-size: 3vh;
+                padding-bottom: 5px;
+                font-size: 25px;
             }
             .PI_content > a >  img{
-                width: 3vh;
+                width: 25px;
                 vertical-align: middle;
             }
             #introduction{
                 clear: both;
-                margin-top: 5vh;
+                margin-top: 88px;
             }
             .introduction_title{
-                width: 18vh;
-                font-size: 2.5vh;
+                width: 180px;
+                font-size: 30px;
                 font-family: "NanumSquare_acB";
                 border-bottom: 2px solid #000;
             }
             .introduction_content > p{
                 margin: 0;
-                font-size: 2.5vh;
+                font-size: 24px;
                 color: #444;
             }
             #chameleon{
@@ -191,7 +190,7 @@
             }
             .go_skills{
                 position: absolute;
-                bottom: 5vh;
+                bottom: 50px;
                 left: 50%;
                 transform:translateX(-50%);
                 text-align: center;
@@ -217,12 +216,12 @@
 
             /* 세번째 페이지 */
             #page_3 > .content{
-                height: 100vh;
+                height: 100%;
             }
             #page3_title{
                 float: left;
                 font-family: "NanumSquare_acB";
-                font-size: 2.5vh;/*30px*/
+                font-size: 30px;
                 border-bottom: 3px solid #000;
             }
             .skills{
@@ -241,12 +240,12 @@
                 display: none;
             }
             .skill_name{
-                font-size: 2.5vh;
+                font-size: 30px;
             }
             .Prog{
                 border-radius: 5px;
-                width: 50vh;
-                height: 4vh;
+                width: 500px;
+                height: 40px;
                 background-color: grey;
                 position: relative;
                 box-shadow: 0.8px 0.8px rgba(0,0,0,0.7);
@@ -256,19 +255,19 @@
                 position: absolute;
                 top: 0;
                 border-radius: 5px 0 0 5px;
-                width: 3%;
-                height: 4vh;
+                width: 10px;
+                height: 40px;
             }
             .skill_info{
                 margin-top: 20px;
-                font-size: 2vh;
+                font-size: 20px;
             }
             #java_Gauge{background-color: #FF8C8C;}
             #js_Gauge{background-color: #FFF08C;}
-            #flutter_Gauge{background-color: #5dbae6;}
+            #AWS_Gauge{background-color: #5dbae6;}
             #spring_Gauge{background-color: #ABE692;}
             #jquery_Gauge{background-color: #0865A6;}
-            #oracle_Gauge{background-color: #F25D75;}
+            #DB_Gauge{background-color: #F25D75;}
             #git_Gauge{background-color: rgb(18, 18, 24);}
             #html_Gauge{background-color: #FFBE8C;}
             #css_Gauge{background-color: #8CBDFF;}
@@ -281,7 +280,7 @@
 
             .go_skills_more{
                 position: absolute;
-                bottom: 5vh;
+                bottom: 50px;
                 left: 50%;
                 transform:translateX(-50%);
                 text-align: center;
@@ -308,37 +307,46 @@
             /* 네번째 페이지 */
             #page4_title{
                 float: left;
-                width: 17vh;
+                width: 170px;
                 font-family: "NanumSquare_acB";
-                font-size: 2.5vh;
+                font-size: 30px;
                 border-bottom: 3px solid #000;
             }
             .projects{
                 clear: both;
                 color: #444;
                 margin-left: 50%;
-                height: 65vh;
-                width: 60vh;
+                height: 640px;
+                width: 600px;
                 transform: translateX(-50%);
             }
+            #Hustle{
+                height: 640px;
+                width: 600px;
+                background-color: #e2e2e2;
+                background-image: url(../img/Hustle.PNG);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 600px;
+            }
             #GW{
-                height: 65vh;
-                width: 60vh;
+                height: 640px;
+                width: 600px;
                 background-image: url(../img/GW_main.PNG);
-                background-size: 60vh;
+                background-size: 600px;
             }
             #DTM{
-                height: 65vh;
-                width: 60vh;
+                height: 640px;
+                width: 600px;
                 background-color: #e2e2e2;
                 background-image: url(../img/soften_main.PNG);
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: contain;
+                background-size: 600px;
             }
             #findMyStar{
-                height: 65vh;
-                width: 60vh;
+                height: 640px;
+                width: 600px;
                 background-color: #e2e2e2;
                 background-image: url(../img/findMyStar.PNG);
                 background-repeat: no-repeat;
@@ -347,53 +355,55 @@
             }
             .project_info{
                 position: absolute;
-                top: 15vh;
+                top: 150px;
                 display: none;
-                height: 66vh;
-                width: 60vh;
+                height: 640px;
+                width: 600px;
                 transform: translateY(-30%);
                 background-color: #f7f7f9;
-                padding-top: 6vh;
+                padding-top: 60px;
+            }
+            .project_info p{
+                position: absolute;
+                bottom: 50px;
+                left: 50px;
+            }.project_info a{
+                margin: 10px;
             }
             .project_info :first-child{
-                margin-top: 3vh;
+                margin-top: 130px;
             }
             .project_explanation{
                 padding: 0 10% 0;
-                font-size: 2vh;
+                font-size: 18px;
             }
             .project_title{
-                font-size: 2.5vh;
+                font-size: 30px;
             }
             .project_link{
-                margin-top: 5vh;
-                font-size: 2vh;
+                font-size: 20px;
                 vertical-align: middle;
             }
-            .project_link > a{
-                margin-right: 1vh;
-            }
-            .FMS > a{
-                margin-right: 0.5vh;
-            }
-            #GW .project_link{
-                margin-top: 15vh;
-            }
-            #findMyStar .project_link{
-                margin-top: 20vh;
-            }
             .project_link > a > img{
-                margin-top: 0 !important;
-                width: 2vh;
+                width: 20px;
             }
             /* 네번째 페이지 */
-            
+            .modal{ 
+                position:fixed;
+                z-index: 1; 
+                width:100%;
+                height:100%; 
+                background: rgba(0,0,0,0.8); 
+                top:0; 
+                bottom: 0;
+                display: none;
+            }
             /* 다섯번째 페이지 */
             #page5_title{
                 float: left;
-                width: 17vh;
+                width: 170px;
                 font-family: "NanumSquare_acB";
-                font-size: 2.5vh;
+                font-size: 30px;
                 border-bottom: 3px solid #000;
             }
             .emailForm{
@@ -401,32 +411,32 @@
                 padding-top: 10%;
             }
             .emailForm div{
-                margin: 2vh;
+                margin: 20px;
             }
             .emailForm input{
                 background-color: #fff;
-                padding-left: 1.5vh;
-                width: 55vh;
-                height: 5vh;
+                padding-left: 15px;
+                width: 500px;
+                height: 50px;
                 font-family: "NanumSquare_acR";
-                font-size: 2vh;
+                font-size: 20px;
                 border-radius: 8px;
                 border: 2px solid  #000;
             }
             #emailForm_content{
                 background-color: #fff;
-                padding-top: 1.5vh;
-                padding-left: 1.5vh;
+                padding-top: 15px;
+                padding-left: 15px;
                 font-family: "NanumSquare_acR";
-                font-size: 2vh;
+                font-size: 20px;
                 resize: none;
                 border-radius: 8px;
                 border: 2px solid  #000;
-                width: 55vh;
-                height: 30vh;
+                width: 500px;
+                height: 300px;
             }
             #send_button{
                 padding: 0;
                 border: 2px solid  #000;
-                width: 14vh;
+                width: 140px;
             }
